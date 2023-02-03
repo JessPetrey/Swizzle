@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: url('/static/imgs/10 Marble Textures Vol4/10.jpg');
+    background-size: cover;
+}
+.Oswald {
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+}
+.jumbotron, .formColor {
+    background-color:rgba(192, 192, 192, 0.4);
+}
+#button-color {
+    background-color: rgb(130, 130, 130);
+}
+.drinkcard {
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: min-content;
+    width: 50%;
+    padding: 3%;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 10%;
+}
+
+#drink {
+    margin-bottom: 10%;
+}
+#previous, #next, #save-drink {
+    width: 30%;
+    background-color: rgb(130, 130, 130);
+}
