@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand">
             <div class="navbar-collapse justify-content-end">
                 <div class="navbar-nav">
-                    <a href="/swizzle/{{user_id}}" class="p-2 m-2 text-decoration-none btn text-white" id="button-color">Back to Search</a>
+                    <a href="/swizzle/{{user_id.id}}" class="p-2 m-2 text-decoration-none btn text-white" id="button-color">Back to Search</a>
                     <a href="/swizzle/logout" class="p-2 m-2 text-decoration-none btn text-white" id="button-color">Logout</a>
                 </div>
             </div>
@@ -35,6 +35,8 @@
     </div>
     <div class="container text-center mt-5 p-5 formColor">
         <h1>Coming Soon!</h1>
+        <hr>
+        <h2>Your saved drinks will be displayed here</h2>
     </div>
     <script type="text/javascript" src="{{ url_for('static',filename='/js/script.js') }}"></script>
 </body>

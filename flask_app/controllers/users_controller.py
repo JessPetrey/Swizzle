@@ -36,7 +36,7 @@ def register():
     # --------- store created user's id in session
     session['user_id'] = user_id
     # -------- take the new user to their personalized page
-    return redirect('/swizzle/<int:id>')
+    return redirect(f'/swizzle/{user_id}')
 
 #? ------------login an existing user
 @app.route('/swizzle/login', methods=['POST'])

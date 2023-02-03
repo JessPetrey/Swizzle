@@ -63,6 +63,7 @@ function getDrink(event) {
 document.getElementById('next').addEventListener('click', nextButton);
 function nextButton() {
     counter++;
+    document.getElementById('save-drink').innerText = 'Save';
     
     if (counter > allDrinks.length - 1) {
         counter = 0;
@@ -100,6 +101,7 @@ function nextButton() {
 document.getElementById('previous').addEventListener('click', previousButton);
 function previousButton() {
     counter--;
+    document.getElementById('save-drink').innerText = 'Save';
     
     if (counter < 0) {
         counter = allDrinks.length - 1;
@@ -135,8 +137,5 @@ function previousButton() {
 };
 
 let savedDrink = document.getElementById('save-drink').addEventListener('click', function(event) {
-    event.preventDefault();
     document.getElementById('save-drink').innerText = 'Coming Soon!';
-    
-
 });
