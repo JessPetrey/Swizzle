@@ -38,9 +38,9 @@ class Drink:
     @classmethod
     def get_all_drinks(cls):
         query = '''
-            SELECT * FROM drinks 
+            SELECT * FROM savedDrinks 
             JOIN users 
-            ON drinks.user_id = users.id;
+            ON savedDrinks.user_id = users.id;
         '''
         results = connectToMySQL('swizzle_schema').query_db(query)
         # print(results)
@@ -62,9 +62,9 @@ class Drink:
     @classmethod
     def get_one_drink(cls, data):
         query = '''
-            SELECT * FROM drinks
+            SELECT * FROM savedDrinks
             JOIN users
-            ON drinks.user_id = users.id
+            ON savedDrinks.user_id = users.id
             WHERE drinks.id = %(id)s;
         '''
         results = connectToMySQL('swizzle_schema').query_db(query, data)
