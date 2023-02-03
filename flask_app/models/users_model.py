@@ -1,7 +1,6 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask import session, flash
 from flask_app import app
-# from flask_app.models import recipes_model
 import re
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 NAME_REGEX = re.compile(r'^[a-zA-Z]{2,255}$')
