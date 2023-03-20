@@ -1,8 +1,13 @@
 // require('dotenv').config()
 // console.log(process.env.FLASK_APP_API_KEY)
 var drinkResultDiv = document.querySelector('#drinkResults');
+<<<<<<< HEAD
 // CocktailDB api Base url --------- this is a development/educational test key
 var COCKTAIL_URL = `https://thecocktaildb.com/api/json/v1/1/search.php?s=`
+=======
+// CocktailDB api Base url     (I'm using a development testing key but hid it anyways) 
+var COCKTAIL_URL = `https://thecocktaildb.com/api/json/v1/*nope*/search.php?s=`
+>>>>>>> 5f4de37c6de26276074b6e28027deb0d54fc48b2
 
 let drink = document.getElementById('drink');
 let thumbnail = document.getElementById('thumbnail');
